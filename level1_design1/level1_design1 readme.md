@@ -74,4 +74,4 @@ Updating the design and re-running the test makes the test pass.
 
 
 
-The updated design is checked in as adder_fix.v
+The updated design is checked in as test_muxcorrect.py
