@@ -4,10 +4,12 @@ TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 
-VERILOG_SOURCES = $(PWD)/               # provide your design path
+export PYTHONPATH := $(PWD):$(PYTHONPATH)
 
-TOPLEVEL :=           # design file
-MODULE   :=     # test file
+VERILOG_SOURCES = $(PWD)/level3_design.v               # provide your design path
+
+TOPLEVEL :=level3_design           # design file
+MODULE   :=level3_design     # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
