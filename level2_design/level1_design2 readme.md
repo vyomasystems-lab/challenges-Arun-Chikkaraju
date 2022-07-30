@@ -33,7 +33,7 @@ The state diagram for the 1011 sequence with overlapping is:
  given random sequence and observed for the bugs 
   
   
-bash
+
 ```
      INP_bit=random.randint(0,1)
      await FallingEdge(dut.clk)
@@ -51,7 +51,7 @@ bash
 
 ## reason for the bug
 
-bash
+
 ```
     SEQ_1011:
       begin
@@ -65,7 +65,7 @@ default state which is ``IDLE`` so the overlapping condition is failed
 
 To rectify it:
 
-bash
+
 ```
  SEQ_1011:
       begin
