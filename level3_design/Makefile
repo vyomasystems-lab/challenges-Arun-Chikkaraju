@@ -6,10 +6,10 @@ PWD=$(shell pwd)
 
 export PYTHONPATH := $(PWD):$(PYTHONPATH)
 
-VERILOG_SOURCES = $(PWD)/level3_design.v               # provide your design path
+VERILOG_SOURCES = $(PWD)/design3.v            # provide your design path
 
-TOPLEVEL :=level3_design           # design file
-MODULE   :=level3_design     # test file
+TOPLEVEL :=design3           # design file
+MODULE   :=design3_test    # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
