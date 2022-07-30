@@ -19,7 +19,7 @@ It also consists of the reset input which will reset the design when it is high
 
 The state diagram for the 1011 sequence with overlapping is:
 
-![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/p2.png)
+![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/p2.jpg)
 
 
 
