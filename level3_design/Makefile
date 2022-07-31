@@ -8,7 +8,7 @@ PWD=$(shell pwd)
 
 VERILOG_SOURCES = $(PWD)/projdesign3.v           # provide your design path
 
-TOPLEVEL := projdesign3          # design file
+TOPLEVEL := breadboard          # design file
 MODULE   := test_design3    # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
