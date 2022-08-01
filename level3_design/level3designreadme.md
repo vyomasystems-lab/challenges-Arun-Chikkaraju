@@ -14,7 +14,7 @@ instruction the specified operation will be done and the output is stored in the
 
 This design consists of 16 commands or instructions which are :
 
-![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/d31.png)
+![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/d31.jpg)
 
 
 ## Verification of the design
