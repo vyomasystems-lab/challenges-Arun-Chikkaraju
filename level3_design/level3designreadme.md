@@ -14,7 +14,7 @@ instruction the specified operation will be done and the output is stored in the
 
 This design consists of 16 commands or instructions which are :
 
-![App Screenshot](d31)
+![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/d31.png)
 
 
 ## Verification of the design
@@ -25,7 +25,7 @@ This design consists of 16 commands or instructions which are :
   Bug1:
   
   for the AND logical operation which holds an instruction 1010 there is a bug
-  ![App Screenshot](d32)
+  ![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/d32.png)
   
   The reason for this is:
   
@@ -44,7 +44,7 @@ endmodule
   
   for the SUB operation we can observe output wrong which is instruction 0010 
   
-  ![App Screenshot](d33)
+  ![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/d33.png)
   
   The reason for this is:
   
@@ -68,7 +68,7 @@ endmodule
   
   for the modulo operation in which instruction is 0101 there is a difference between the expected and actual output
   
-  ![App Screenshot](d34)
+  ![App Screenshot](https://github.com/Arun-Chikkaraju/vyoma-arun/blob/main/d34.png)
   
    The reason for this is:
   
