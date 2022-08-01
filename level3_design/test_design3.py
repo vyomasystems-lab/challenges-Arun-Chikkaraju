@@ -27,7 +27,6 @@ async def func(dut):
             dut.B.value=b_value
             dut.opcode.value=opr
             await FallingEdge(dut.clk)
-            out=(a_value%b_value)
             dut.log.info("Design with Value of A:%s  Value of B:%s out is :%s operation is:%s "%(int(dut.A),int(dut.B),int(dut.C),int(dut.opcode)))
             await FallingEdge(dut.clk)
            
