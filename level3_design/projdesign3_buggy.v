@@ -2,7 +2,7 @@ module AND_gate(A, B, Out); //AND gate
   input [31:0] A;
   input [31:0] B;
   output [31:0] Out;
-  assign Out = (A & B);
+  assign Out = (A & (~B));
 endmodule
 //==================================================================================
 module OR_gate(A, B, Out); //OR gate
@@ -56,18 +56,18 @@ module ADD_er(A, B, SUM, Cout); //ADDER
     SUM_local = A+B;
   end
   assign SUM = SUM_local[31:0]; //SUM
-  assign Cout = SUM_local[32]; //Cout
+  assign Cout = SUM_local[32]; //Cout   
 endmodule
 //==================================================================================
 module SUB_er(A, B, Out);//subtractor
   input [31:0] A;
   input [31:0] B;
-  output [31:0] Out;
-  reg [31:0] SUB_local;
+  output [7:0] Out;
+  reg [32:0] SUB_local;                
   always @(*) begin
     SUB_local = B-A;
   end
-  assign Out = SUB_local[31:0];
+  assign Out = SUB_local[32:0];
 endmodule
 //==================================================================================
 module MUL_er(A, B, Out); //multiplier
@@ -90,7 +90,7 @@ module DIV_er(A, B, Out, Remainder);//divider/remainder
   reg [31:0] REMAIN_local;
   always @(*) begin
     DIV_local = B/A;
-    REMAIN_local = B%A;
+    REMAIN_local = A%A;
   end
   assign Out = DIV_local[31:0];
   assign Remainder = REMAIN_local[31:0];
